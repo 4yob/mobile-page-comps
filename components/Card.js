@@ -1,27 +1,27 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default function Header() {
+export default function Card() {
     return (
-        <View style={styles.header}>
-            <Text style={styles.title}>Alejandra Barros</Text>
+        <View style={styles.card}>
+            <Text style={styles.text}>Atividade 08 - Página com Componentes</Text>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    header: {
+    card: {
         backgroundColor: "#FFFFFF",
         padding: 20,
         width: "100%",
         alignItems: "center",
         justifyContent: "center",
-        position: "fixed",
-        top: 0,
-        left: 0,
+        width: 300,
+        height: 300,
+        borderRadius: 10,
     },
-    title: {
-        fontSize: 24,
+    text: {
+        fontSize: 18,
         color: "#A52A2A",
         fontWeight: "bold",
         textAlign: "center",
